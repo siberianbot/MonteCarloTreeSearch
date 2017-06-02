@@ -110,6 +110,7 @@ public:
         MCBTreeNode * newnode = new MCBTreeNode;
         newnode->Parent = bestnode;
         newnode->Player = this->mFigure;
+        this->mCurrent->Nodes.push_back ( newnode );
 
         // 3. simulation
         // simulate game.
@@ -154,7 +155,6 @@ public:
         }
 
         // make move...
-        this->mCurrent->Nodes.push_back ( newnode );
         this->mCurrent = newnode;
         TTTGame::MakeMove ( __field, this->mFigure, mCurrent->MoveX, mCurrent->MoveY );
     }
