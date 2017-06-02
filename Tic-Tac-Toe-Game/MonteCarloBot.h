@@ -101,7 +101,7 @@ public:
         MCBTreeNode * bestnode = this->mCurrent;
         for ( MCBTreeNode * node : this->mCurrent->Nodes )
         {
-            if ( node->Wins > bestnode->Wins )
+            if ( ((double) node->Wins / node->Attempts) > ((double) bestnode->Wins / bestnode->Attempts) )
                 bestnode = node;
         }
 

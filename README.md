@@ -2,6 +2,7 @@
 My realization of Monte-Carlo tree search algorithm.
 
 Explanation available in Wikipedia (https://en.wikipedia.org/wiki/Monte_Carlo_tree_search).
+My explanation available as article on Habrahabr (https://habrahabr.ru/post/330092/) and here in file Article_Ru.md (both in russian).
 
 This is just example, so don't be surprised by some shitty code and etc.
 
